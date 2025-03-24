@@ -9,7 +9,6 @@
     </div>
 </div>
 
-
 <script>
     function showAlert() {
         Swal.fire({
