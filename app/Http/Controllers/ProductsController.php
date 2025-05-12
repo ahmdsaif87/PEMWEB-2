@@ -17,7 +17,7 @@ class ProductsController extends Controller
 
     public function create()
     {
-        $categories = Categories::all(); // Untuk dropdown kategori
+        $categories = Categories::all();
         return view('dashboard.products.create', compact('categories'));
     }
 
@@ -97,7 +97,7 @@ class ProductsController extends Controller
                 $imageName,
                 'public'
             );
-            $product->image = $imagePath;
+            $product->image_url = $imagePath;
         }
 
         $product->save();
